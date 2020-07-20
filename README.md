@@ -1,4 +1,14 @@
 ## Web dev basics
+Install requirements (ideally in a virtual env)  
+
+`$ python3 -m venv venv`  
+`$ source venv/bin/activate`  
+
+`$ pip install -r requirements.txt`
+
+
+Run example app   
+`$ python app.py`
 
 ### HTTP requests
 - Client/server dichotomy
