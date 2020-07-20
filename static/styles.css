@@ -1,0 +1,20 @@
+/* edit styles by element type */
+body {
+	padding: 32px;
+}
+
+form {
+	width: 256px;
+}
+
+/* edit styles by class */
+.title {
+	color: green;
+	margin-top: 32px;
+}
+
+/* edit styles by id */
+#reverse-name {
+	font-size: 32px;
+	margin: 16px;
+}

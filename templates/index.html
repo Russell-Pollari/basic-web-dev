@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Web dev basics</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<Link rel="stylesheet" href="/static/styles.css">
+		<link rel="shortcut icon" href="/static/favicon.ico">
+		<script src="/static/script.js"></script>
+	</head>
+	<body>
+		<h3 class="title">
+			Submit a form
+		</h3>
+		<form action="/submit-form" method="POST">
+			<div class="form-group">
+				<input name="name" placeholder="name" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<input name="email" placeholder="email" type="email" class="form-control"/>
+			</div>
+			<button type="submit" class="btn btn-primary">
+				Submit
+			</button>
+		</form>
+
+		<h3 class="title">
+			Edit the DOM and submit AJAX request
+		</h3>
+		<input id="name" oninput="handleNameChange(this.value)"></input>
+		<p>
+			Hit enter to reverse: <span id="show-name"></span>
+		</p>
+		<button class="btn btn-primary" onclick="handleButtonClick()">
+			Reverse
+		</button>
+		<p>
+			<span id="reverse-name"></span>
+		</p>
+	</body>
+</html>
